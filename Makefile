@@ -78,9 +78,6 @@ DEPS		:= $(OBJECTS:.o=.d)
 OUTPUTMAIN	:= $(call FIXPATH,$(OUTPUT)/$(MAIN))
 TESTMAIN	:= $(call FIXPATH,$(OUTPUT)/$(TEST))
 
-dummy:
-	@echo $(TESTSOURCES)
-	@echo $(SOURCES)
 
 # all: $(OUTPUT) $(MAIN) $(TEST)
 all: $(OUTPUT) $(MAIN) tests
