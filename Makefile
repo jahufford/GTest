@@ -35,8 +35,8 @@ FIXPATH = $(subst /,\,$1)
 RM			:= del /q /f
 MD	:= mkdir
 else
-MAIN	:= sim_8086
-TEST	:= TEST_sim_8086
+MAIN	:= project_executable
+TEST	:= TEST_project_executable
 TESTDIRS	:= $(shell find $(SRC) -type d)
 SOURCEDIRS	:= $(filter-out $(SRC)/$(TESTS)%, $(TESTDIRS))
 INCLUDEDIRS	:= $(shell find $(INCLUDE) -type d)
